@@ -161,7 +161,7 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 100%;
+    width: 40%;
 }
 
 .about .title-about .title {
@@ -299,7 +299,7 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 64px 120px;
+    margin: 120px 120px;
 }
 
 .testimonial .title-testi{
@@ -368,7 +368,7 @@ h4{
     display: flex;
     flex-direction: column;
     padding: 64px 120px;
-    margin: 64px 0 0 0;
+    margin: 120px 0 0 0;
     gap: 40px;
     background-color: #FEF0D8;
 }
@@ -828,7 +828,7 @@ hr{
     font-size: 16px;
 }
 
-        /* About section (Tablet) */
+    /* About section (Tablet) */
     .about{
         padding: 48px 64px;
         gap: 32px;
@@ -842,7 +842,7 @@ hr{
 
     .about .title-about{
         gap: 16px;
-        width: 60%;
+        width: 90%;
     }
 
     .about .title-about .title{
@@ -913,7 +913,7 @@ hr{
     /* Testimonial (Tablet) */
     .testimonial{
         gap: 32px;
-        margin: 48px 64px;
+        margin: 64px 64px;
     }
 
     .testimonial .title-testi{
@@ -950,6 +950,7 @@ hr{
     .form{
         padding: 48px 64px;
         gap: 32px;
+        margin: 64px 0 0 0;
     }
 
     .form .title-desc{
@@ -1200,6 +1201,10 @@ hr{
         gap: 8px;
         text-align: center;
         width: 100%;
+    }
+
+    .hero .content .btn.cta{
+        font-size: 14px;
     }
 
 
