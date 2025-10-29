@@ -1,0 +1,1361 @@
+:root{
+    --primary: #FCA311;
+    --text: #0F0F0F;
+    --bg:#FBFBFB;
+    --grey: #787878;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'open sans',sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 24px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 32px 120px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.navbar .navbar-logo img{
+    height: 32px;
+}
+
+.navbar .navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .btn.nav{
+    display: none;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    gap: 48px;
+    padding: 16px 24px;
+    background-color: transparent;
+}
+
+.navbar .navbar-nav a{
+    font-size: 18px;
+    font-weight: 500 ;
+    color: var(--bg);
+}
+
+.navbar.scrolled .navbar-nav a {
+    color: var(--text);
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a.btn:hover {
+    color: var(--text);
+}
+
+.navbar .navbar-extra{
+    display: flex;
+}
+
+.navbar .navbar-extra #hamburger-menu{
+    display: none;
+}
+
+/* Hero Section */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    color: var(--bg);
+    gap: 40px ;
+    padding-left:120px ;
+    width: 50% ;
+}
+
+.hero .content .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.hero .content .hero-text p{
+    line-height: 1.5 ;
+}
+
+/*About section  */
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 64px 120px;
+    margin-top: 64px;
+    gap: 40px;
+}
+
+.about .title-about{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.about .title-about .title {
+    border: 1px solid var(--grey);
+    padding: 8px 24px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.about .title-about span{
+    color: #C27900;
+}
+
+.about .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .content .image-about{
+    margin-right: 32px;
+    height: 430px;
+}
+
+.about .content .container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    gap: 24px;
+}
+
+.about .content .container .summary{
+    letter-spacing:0.5px;
+}
+
+.about .content .container .visi{
+    display: flex;
+    gap: 16px;
+}
+
+.about .content .container .visi .icon-visi{
+    height:80px ;
+}
+
+.about .content .container .visi .visi-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about .content .container .visi .visi-text span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about .content .container .misi{
+    display: flex;
+    gap: 16px;
+}
+
+.about .content .container .misi .icon-misi{
+    height:80px ;
+}
+
+.about .content .container .misi .misi-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about .content .container .misi .misi-text span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Services Section */
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 120px;
+    background-color: #FEF0D8;
+    margin: 64px 0;
+}
+
+.service .title-descript{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.service .title-descript h3.center{
+    text-align: center;
+}
+
+.service .title-descript .title{
+    border: 1px solid var(--grey);
+    padding: 8px 24px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.service .title-descript span{
+    color: #C27900;
+}
+
+.service .cards{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.service .cards .it-consulting, .cloud-solution, .cybersecurity{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    background-color: var(--bg);
+}
+
+.service .cards .icon-it, .icon-cloud, .icon-cyber{
+    height: 80px;
+}
+
+.service .cards .description{
+    text-align: center;
+}
+
+/* Testimonial*/
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 64px 120px;
+}
+
+.testimonial .title-testi{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonial .title-testi .title{
+    border: 1px solid var(--grey);
+    padding: 8px 24px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.testimonial .title-testi span{
+    color:#C27900;
+}
+
+.testimonial .cards{
+    display: flex;
+    gap: 24px;
+}
+
+.testimonial .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+}
+
+.testimonial .cards .card .quote-icon{
+    height: 56px;
+}
+
+.testimonial .cards .card img{
+    height: 64px;
+}
+
+.testimonial .cards .star-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonial .cards .image-andi, .image-clara, .image-nadia{
+    height: 360px;
+}
+
+.testimonial .cards .client{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.testimonial .cards .client .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Form */
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 64px 120px;
+    margin: 64px 0 0 0;
+    gap: 40px;
+    background-color: #FEF0D8;
+}
+
+.form .title-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.form .title-desc .title{
+    border: 1px solid var(--grey);
+    padding: 8px 24px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.form .title-desc h3.text-center{
+    text-align: center;
+}
+
+.form .title-desc span{
+    color: #C27900;
+}
+
+.form .form-content{
+    display: flex;
+    gap: 64px;
+}
+
+.form .form-content .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1.2;
+}
+
+.form .form-content .form-container .background{
+    display: flex;
+    justify-content: space-between;
+    gap:32px;
+}
+
+.form .form-content .form-container .background .your-name, .your-company{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form .form-content .form-container .background .your-name span{
+    color: #E41010;
+}
+
+.form .form-content .form-container .background .your-name input{
+    border: 1px solid #373737;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+    padding: 16px;
+}
+
+.form .form-content .form-container .background .your-company span{
+    color: #E10104;
+}
+
+.form .form-content .form-container .background .your-company input{
+    border: 1px solid #373737;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+    padding: 16px;
+}
+
+.form .form-content .form-container .email{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form .form-content .form-container .email input{
+    border: 1px solid #373737;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+    padding: 16px;
+}
+
+.form .form-content .form-container .email span{
+    color: #E10104 ;
+}
+
+.form .form-content .form-container .services{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form .form-content .form-container .services .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form .form-content .form-container .services .title .desc-opt{
+    color: var(--grey);
+}
+
+.form .form-content .form-container .services .title span{
+    font-weight: 500;
+    color: #E10104;
+}
+
+.form .form-content .form-container .services .option{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form .form-content .form-container .services .option p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* (Checkbox start) */
+.checkbox{
+    position: relative;
+    display: flex;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+.checkbox input{
+    position: absolute;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.check{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+    transform: translateY(2px);
+}
+
+
+.checkbox input:checked ~ .check{
+    background-color: var(--primary);
+    border-color: transparent;
+}
+
+.check::after{
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 12px;
+    border: solid var(--bg);
+    border-width:0 3px 3px 0 ;
+    left: 7px;
+    top: 2px;
+    transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .check::after{
+    display: block;
+}
+/* (Checkbox end) */
+
+.form .form-content .form-container .text-area{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form .form-content .form-container .text-area span{
+    color: #E10104;
+}
+
+.form .form-content .form-container .text-area textarea{
+    width: 100%;
+    height: 240px;
+    background-color: transparent;
+    border:1px solid var(--grey);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+}
+
+.form .form-content .form-container button{
+    margin: 0 auto;
+}
+
+.form .form-content .form-image{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+input:focus{
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+input::placeholder{
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:not(:placeholder-shown) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    font-weight:500;
+}
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text);
+    padding: 64px 120px 24px 120px;
+    color: var(--bg);
+    gap: 32px;
+}
+
+.footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .footer-container .left-section{
+    flex: 1;
+}
+
+.footer .footer-container .right-section{
+    display: flex;
+    flex: 1.5;
+    gap: 64px;
+    justify-content: flex-end;
+}
+
+.footer .footer-container .right-section ul{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.footer .footer-container .right-section h4{
+    font-size: 20px;
+}
+
+.footer .footer-container .right-section ul li{
+    margin-top: 8px;
+
+}
+
+hr{
+    border:none;
+    border-top: 0.5px solid var(--bg);
+}
+
+.no-telp, .the-email, .map-detail, .social-media{
+    color: var(--bg);
+}
+
+.footer .info-telp, .info-email, .info-map{
+    display: flex;
+    gap:8px;
+}
+
+.footer .info-telp{
+    margin-top: 32px;
+}
+
+.footer .info-email{
+    margin-top: 8px;
+}
+
+.footer .info-map{
+    margin-top: 8px;
+}
+
+.footer .left-section .social-media{
+    margin-top: 32px;
+}
+
+.footer .left-section .icon-media{
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.footer-bottom{
+    display: flex;
+}
+
+.footer .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-bottom .footer-links{
+    display: flex;
+    gap: 64px;
+}
+
+.footer .footer-bottom .footer-links a{
+    color: var(--bg);
+}
+
+
+/* ini untuk animasi hover yg ada garis bawah muncul */
+/* .navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+    
+} */
+
+
+/* Breakpoint Tablet */
+@media ( max-width:768px){
+    html,body{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .btn{
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+    /* Navbar (Tablet)*/
+    .navbar{
+        padding: 32px 64px;
+    }
+
+    .navbar .navbar-nav .btn.nav{
+        font-size: 16px;
+        display: inline-block;
+        padding: 16px 24px;
+    }
+
+    .navbar .navbar-extra #hamburger-menu{
+        display:inline-block;
+        color: var(--bg);
+        transition: 0.3s ease;
+    }
+
+    .navbar .navbar-extra #hamburger-menu.scrolled{
+        color: var(--text);
+    }
+
+    .navbar .navbar-extra .btn.extra{
+        display: none;
+    }
+
+    .navbar .navbar-logo img {
+        height: 24px;
+    }
+
+    .navbar .navbar-extra{
+        gap: 16px;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 40%;
+        height: 100vh;
+        box-shadow: -2px 0 2px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        display: block;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        display: block;
+        margin: 16px;
+        font-size: 16px;
+        padding: 8px;
+        color: var(--text);
+    }
+
+    /* Hero Section (Tablet) */
+    .hero{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .hero .content{
+        padding-left: 48px;
+        gap: 24;
+        width:70% ;
+    }
+
+    .hero .content .hero-text{
+        gap: 16px;
+    }
+
+    .hero .content .btn.cta{
+    font-size: 16px;
+}
+
+        /* About section (Tablet) */
+    .about{
+        padding: 48px 64px;
+        gap: 32px;
+        margin-top: 48px;
+    }
+
+    .about .content{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .about .title-about{
+        gap: 16px;
+        width: 60%;
+    }
+
+    .about .title-about .title{
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .about .content .image-about{
+        margin: 0 auto;
+        height: 400px;
+    }
+
+    .about .content .container{
+        margin-left: 0;
+        gap: 16px;
+    }
+
+    .about .content .container .visi .icon-visi{
+        height:64px ;
+    }
+
+    .about .content .container .visi .visi-text span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .about .content .container .misi .icon-misi{
+        height:64px ;
+    }
+
+    .about .content .container .misi .misi-text span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* Service Section (Tablet) */
+    .service{
+        gap: 32px;
+        padding: 48px 64px;
+        margin-top: 48px;
+    }
+
+    .service .title-descript{
+        gap: 16px;
+    }
+
+    .service .title-descript .title{
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .service .cards{
+        flex-direction: column;
+    }
+
+    .service .cards .icon-it, .icon-cloud, .icon-cyber{
+        height: 64px;
+    }
+
+    .service .cards .description{
+        font-size: 16px;
+    }
+
+    .service .cards .it-consulting, .cloud-solution, .cybersecurity{
+        gap: 16px;
+    }
+
+    /* Testimonial (Tablet) */
+    .testimonial{
+        gap: 32px;
+        margin: 48px 64px;
+    }
+
+    .testimonial .title-testi{
+        gap: 16px;
+    }
+
+    .testimonial .title-testi .title{
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .testimonial .cards{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .testimonial .cards .card{
+        gap: 16px;
+    }
+
+    .testimonial .cards .card img{
+        height: 48px;
+    }
+
+    .testimonial .cards .card .quote-icon{
+    height: 48px;
+}
+
+    .testimonial .cards .client .name{
+    font-size: 16px;
+}
+
+/* Form (Tablet) */
+    .form{
+        padding: 48px 64px;
+        gap: 32px;
+    }
+
+    .form .title-desc{
+        gap: 16px;
+    }
+
+    .form .title-desc .title{
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .form .form-content .form-container{
+        gap: 24px;
+    }
+
+    .form .form-content .form-container .background{
+        gap: 24px;
+    }
+    
+    .form .form-content .form-container .background .your-name, .your-company{
+        gap: 4px;
+    }
+
+    .form .form-content .form-container .background .your-name input{
+        padding: 8px;
+        height: 32px;
+    }
+
+    .form .form-content .form-container .background .your-company input{
+        padding: 8px;
+        height: 32px;
+    }
+
+    .form .form-content .form-container .email{
+        gap: 4px;
+    }
+
+    .form .form-content .form-container .email input{
+        height: 32px;
+        padding: 8px;
+    }
+
+    .form .form-content .form-container .services .title{
+        font-size: 16px;
+        font-weight: 600;   
+    }
+
+    .form .form-content .form-container .services .option{
+        gap: 8px;
+    }
+
+    .form .form-content .form-container .services .option p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* (Checkbox start) */
+    .checkbox{
+        padding-left: 24px;
+    }
+
+    .check{
+        width: 20px;
+        height: 20px;
+        transform: translateY(1px);
+    }
+
+    .check::after{
+        content: "";
+        position: absolute;
+        display: none;
+        width: 5px;
+        height: 12px;
+        border: solid var(--bg);
+        border-width:0 2.5px 2.5px 0 ;
+        left: 5px;
+        top: 0px;
+        transform: rotate(45deg);
+    }
+    /* Checkbox end */
+
+    .form .form-content .form-container .text-area{
+        gap: 4px;
+    }
+
+    .form .form-content .form-container .text-area textarea{
+        height: 160px;
+        padding: 8px;
+    }
+
+    textarea::placeholder{
+        font-size: 14px;
+    }
+
+    .form .form-content .form-image{
+        display: none;
+}
+
+    label{
+        font-size: 16px;
+        font-weight: 600px;
+    }
+
+    input:focus{
+        font-family: 'open sans', sans-serif;
+        font-size: 14px;
+        color: var(--text);
+    }
+
+    input::placeholder{
+        font-size: 14px;
+    }
+
+    input:not(:placeholder-shown){
+        font-size: 14px;
+    }
+
+    .form .form-content .form-container button{
+        font-size: 16px;
+    }
+
+    /* Footer (Tablet) */
+    .footer{
+        padding: 48px 64px;
+        gap: 24px;
+    }
+
+    .footer .footer-container .left-section img{
+        height: 16px;
+    }
+
+    .footer .footer-container .left-section p{
+        font-size: 16px;
+    }
+
+    .footer .footer-container .right-section{
+        gap: 24px;
+    }
+
+    .footer .footer-container .right-section ul{
+        font-size: 16px;
+    }
+
+    .footer .footer-container .right-section h4{
+        font-size: 16px;
+    }
+
+    .footer .info-telp{
+        margin-top: 24px;
+    }
+
+    .footer .left-section .social-media{
+        margin-top: 24px;
+    }
+
+    .footer .footer-bottom .footer-links{
+        gap: 48px;
+    }
+
+    .footer .footer-bottom p{
+        font-size: 16px;
+    }
+}
+
+/* Breakpoint Mobile */
+@media (max-width:576px){
+    html,body{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 16px 24px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* Navbar (Mobile) */
+    .navbar{
+        padding: 24px 24px;
+    }
+
+    .navbar .navbar-nav{
+        box-shadow: -1px 0px 2px rgba(0, 0, 0, 0.2);
+        width: 60%;
+    }
+
+    .navbar .navbar-nav .btn.nav{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .navbar .navbar-extra #hamburger-menu{
+        display:inline-block;
+    }
+
+    .navbar .navbar-extra .btn.extra{
+        display: none;
+    }
+
+    .navbar .navbar-logo img{
+        height: 20px;
+    }
+
+    .navbar .navbar-extra{
+        gap: 16px;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav a{
+        font-size: 14px;
+    }
+
+    .navbar .navbar-extra{
+        gap: 16px;
+    }
+
+
+    /* Hero(Mobile) */
+    .hero{
+        justify-content: center;
+    }
+
+    .hero .content{
+        width: 100%;
+        gap: 16px;
+        max-width: 100%;
+        align-items: center;
+        padding: 0 24px;
+    }
+
+    .hero .content .hero-text{
+        gap: 8px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    /* About section(Mobile) */
+    .about{
+        padding: 48px 24px;
+    }
+
+    .about .content{
+        gap: 16px;
+    }
+
+    .about .title-about{
+        gap: 16px;
+        width: 100%;
+    }
+
+    .about .title-about .title{
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .about .content .image-about{
+        height:300px;
+    }
+
+    .about .content .container .visi .visi-text span{
+        font-size: 16px;
+    }
+
+    .about .content .container .misi .misi-text span{
+        font-size: 16px;
+    }
+
+    /* Service Section (Mobile) */
+    .service{
+        gap: 24px;
+        padding: 48px 24px;
+        margin-top: 24px;
+    }
+
+    .service .title-descript .title{
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .service .cards .description{
+        font-size: 14px;
+    }
+
+
+    /* Testimonial (Mobile) */
+    .testimonial{
+        gap: 24px;
+        margin: 48px 24px;
+    }
+
+    .testimonial .title-testi .title{
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .testimonial .cards .card img{
+        height: 48px;
+    }
+
+    .testimonial .cards .client .name{
+        font-size: 14px;
+    }
+
+    /* Form (Mobile) */
+    .form{
+        padding: 48px 24px;
+        gap: 24px;
+    }
+
+    .form .title-desc .title{
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .form .form-content .form-container{
+        gap: 16px;
+    }
+
+    .form .form-content .form-container .background{
+        gap: 24px;
+    }
+
+    .form .form-content .form-container .services .title{
+        font-size: 14px;
+    }
+
+    .form .form-content .form-container .services .option{
+        gap: 8px;
+    }
+
+    .form .form-content .form-container .services .option p{
+        font-size: 14px;
+    }
+
+    textarea::placeholder{
+        font-size: 12px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    input:not(:placeholder-shown){
+        font-size: 12px;
+    }
+
+    .form .form-content .form-container button{
+        font-size: 14px;
+    }
+
+    /* footer (Mobile) */
+    .footer{
+        padding: 48px 24px;
+        gap: 16px;
+    }
+
+    .footer .footer-container{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer .footer-container .left-section p{
+        font-size: 14px;
+    }
+
+    .footer .footer-container .right-section ul{
+        font-size: 14px;
+    }
+
+    .footer .info-telp{
+        margin-top: 16px;
+    }
+
+    .footer .footer-bottom .footer-links{
+        gap: 8px;
+    }
+
+    .footer .footer-bottom .footer-links a{
+        font-size: 12px;
+    }
+
+    .footer .footer-bottom p{
+        font-size: 12px;
+    }
+
+
+}
+
