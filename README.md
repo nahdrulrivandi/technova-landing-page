@@ -8,7 +8,7 @@ Built to showcase a modern IT solutions website concept.
 
 ## Technologies Used
 - HTML5  
-- CSS3 (Flexbox, Grid)
+- CSS
 - JavaScript
 
 ## Author
